@@ -113,12 +113,6 @@ testDTM <- apply(testDTM, MARGIN = 2, convert_counts)
 
 head(trainDTM[,1:10])
 ```
-```{r}
-memory.size()
-memory.size(TRUE)
-memory.limit()
-```
-
 
 ```{r}
 nbayesModel <-  naiveBayes(trainDTM, traindata$label, laplace = 1)
